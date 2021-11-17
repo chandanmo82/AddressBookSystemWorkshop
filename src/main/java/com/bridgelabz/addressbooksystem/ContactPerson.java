@@ -14,7 +14,7 @@ public class ContactPerson {
      * Create Constructor for Initializing the objects
      */
     ContactPerson(String firstName, String lastName, String address, String city, String state, long pinCode,
-                 String phoneNumber, String email) {
+                  String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -91,6 +91,7 @@ public class ContactPerson {
     public String getEmail() {
         return email;
     }
+
     @Override
     public String toString() {
         return "ContactPerson{" + "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", address='"
@@ -98,9 +99,7 @@ public class ContactPerson {
                 + ", phoneNumber='" + phoneNumber + '\'' + ", zipCode=" + pinCode + '}';
     }
 
-
 }
-
 
 
 

@@ -1,4 +1,5 @@
 package com.bridgelabz.addressbooksystem;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
@@ -9,7 +10,11 @@ public class AddressBook {
     String firstName, lastName, address, city, state, email;
     int pinCode;
     String phoneNumber;
-    void addContact(){
+
+    /**
+     * Create Method to Add the Contact List.
+     */
+    public void addContact() {
         System.out.println("Your First Name ");
         firstName = sc.next();
         System.out.println("Your Last Name");
@@ -26,10 +31,9 @@ public class AddressBook {
         pinCode = sc.nextInt();
         System.out.println("Enter PhoneNumber");
         phoneNumber = sc.next();
-        person.add(new  ContactPerson(firstName, lastName, address, city, state, pinCode, email, phoneNumber));
-        System.out.println(person);
-    }
 
+        person.add(new ContactPerson(firstName, lastName, address, city, state, pinCode, email, phoneNumber));
+    }
 
 
 }
